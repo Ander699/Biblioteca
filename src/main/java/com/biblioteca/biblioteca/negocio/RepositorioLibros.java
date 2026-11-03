@@ -1,4 +1,11 @@
 package com.biblioteca.biblioteca.negocio;
 
+import java.util.List;
+import java.util.Optional;
+
 public interface RepositorioLibros {
+
+    List<Libro> listar();
+
+    Optional<Libro> buscarPorId(Long id);
 }
